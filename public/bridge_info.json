@@ -1,0 +1,180 @@
+{
+    "bridges": [
+      {
+        "bridgeName": "bridge1",
+        "bridgeRomanName": "bridge1",
+        "bridgeLength": 135.6,
+        "bridgeType": "Steel Girder",
+        "constructedYear": 1985,
+        "latitude": 35.123456,
+        "longitude": 135.654321,
+        "bridgeID": "BRG-001",
+        "inspections": [
+          {
+            "inspectionName": "2022年点検調書",
+            "inspectionYear": 2022,
+            "inspectionMonth": 5,
+            "inspectionDay": 10,
+            "inspectionLink": "inspection_report/ss_document_2_3.pdf"
+          },
+          {
+            "inspectionName": "2024年点検調書",
+            "inspectionYear": 2024,
+            "inspectionMonth": 8,
+            "inspectionDay": 20,
+            "inspectionLink": "https://www.pref.saitama.lg.jp/documents/152363/hoshuunotebiki4-2ver2.pdf"
+          }
+        ],
+        "photos": [
+          {
+            "photoYear": 2022,
+            "photoMonth": 5,
+            "photoDay": 9,
+            "photoLink": "https://example.com/photos/bridge1/20220509"
+          },
+          {
+            "photoYear": 2024,
+            "photoMonth": 11,
+            "photoDay": 3,
+            "photoLink": "https://example.com/photos/bridge1/20240819"
+          }
+        ],
+        "additional_data": [
+            {
+                "data_name": "設計図書",
+                "data_year": 2016,
+                "data_month": 3,
+                "data_day": 21,
+                "data_link": "https://openjicareport.jica.go.jp/pdf/11915410_03.pdf"
+            },
+            {
+                "data_name": "損傷図",
+                "data_year": 2024,
+                "data_month": 8,
+                "data_day": 19,
+                "data_link": "additional_data/sonshouzu.xlsx"
+            },
+            {
+                "data_name": "パンダ画像",
+                "data_year": 2024,
+                "data_month": 8,
+                "data_day": 19,
+                "data_link": "additional_data/panda.jpg"
+            }
+        ]
+      },
+      {
+        "bridgeName": "田中橋",
+        "bridgeRomanName": "Tanaka-bashi",
+        "bridgeLength": 245.0,
+        "bridgeType": "Concrete T-Beam",
+        "constructedYear": 1992,
+        "latitude": 35.987654,
+        "longitude": 136.543210,
+        "bridgeID": "BRG-002",
+        "inspections": [
+          {
+            "inspectionName": "2022年点検調書",
+            "inspectionYear": 2022,
+            "inspectionMonth": 5,
+            "inspectionDay": 10,
+            "inspectionLink": "inspection_report/ss_document_2_3.pdf"
+          },
+          {
+            "inspectionName": "2024年点検調書",
+            "inspectionYear": 2024,
+            "inspectionMonth": 8,
+            "inspectionDay": 20,
+            "inspectionLink": "https://www.pref.saitama.lg.jp/documents/152363/hoshuunotebiki4-2ver2.pdf"
+          }
+        ],
+        "photos": [
+          {
+            "photoYear": 2020,
+            "photoMonth": 11,
+            "photoDay": 30,
+            "photoLink": "https://example.com/photos/tanakabashi/20201130"
+          },
+          {
+            "photoYear": 2024,
+            "photoMonth": 11,
+            "photoDay": 3,
+            "photoLink": "https://example.com/photos/tanakabashi/20230419"
+          }
+        ],
+        "additional_data": [
+            {
+                "data_name": "設計図書",
+                "data_year": 2016,
+                "data_month": 3,
+                "data_day": 21,
+                "data_link": "https://openjicareport.jica.go.jp/pdf/11915410_03.pdf"
+            },
+            {
+                "data_name": "損傷図",
+                "data_year": 2024,
+                "data_month": 8,
+                "data_day": 19,
+                "data_link": "https://openjicareport.jica.go.jp/pdf/11915410_03.pdf"
+            }
+        ]
+      },
+      {
+        "bridgeName": "桜橋",
+        "bridgeRomanName": "Sakurabashi",
+        "bridgeLength": 90.2,
+        "bridgeType": "Arch Bridge",
+        "constructedYear": 1978,
+        "latitude": 35.774411,
+        "longitude": 135.999999,
+        "bridgeID": "BRG-003",
+        "inspections": [
+            {
+            "inspectionName": "2022年点検調書",
+            "inspectionYear": 2022,
+            "inspectionMonth": 5,
+            "inspectionDay": 10,
+            "inspectionLink": "inspection_report/ss_document_2_3.pdf"
+            },
+            {
+            "inspectionName": "2024年点検調書",
+            "inspectionYear": 2024,
+            "inspectionMonth": 8,
+            "inspectionDay": 20,
+            "inspectionLink": "https://www.pref.saitama.lg.jp/documents/152363/hoshuunotebiki4-2ver2.pdf"
+            }
+        ],
+        "photos": [
+          {
+            "photoYear": 2021,
+            "photoMonth": 11,
+            "photoDay": 4,
+            "photoLink": "https://example.com/photos/sakurabashi/20211104"
+          },
+          {
+            "photoYear": 2022,
+            "photoMonth": 11,
+            "photoDay": 4,
+            "photoLink": "https://example.com/photos/sakurabashi/20221104"
+          }
+        ],
+        "additional_data": [
+            {
+                "data_name": "設計図書",
+                "data_year": 2016,
+                "data_month": 3,
+                "data_day": 21,
+                "data_link": "https://openjicareport.jica.go.jp/pdf/11915410_03.pdf"
+            },
+            {
+                "data_name": "損傷図",
+                "data_year": 2024,
+                "data_month": 8,
+                "data_day": 19,
+                "data_link": "https://openjicareport.jica.go.jp/pdf/11915410_03.pdf"
+            }
+        ]
+      }
+    ]
+  }
+  

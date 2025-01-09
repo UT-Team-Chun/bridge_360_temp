@@ -1,0 +1,219 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<title>360 Viewer</title>
+<meta charset="utf-8">
+<meta name="viewport" content="target-densitydpi=device-dpi, width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no, minimal-ui" />
+<style> @-ms-viewport { width: device-width; } </style>
+<link rel="stylesheet" href="vendor/reset.min.css">
+<link rel="stylesheet" href="style.css">
+<style>
+  #map-container {
+      position: absolute;
+      top: 10px;
+      left: 10px;
+      width: 400px;
+      height: 200px;
+      background-color: #f0f0f0;
+      border: 1px solid #ccc;
+      border-radius: 10px;
+      overflow: hidden;
+      z-index: 2000;
+  }
+
+  #map {
+      position: relative;
+      width: 100%;
+      height: 100%;
+  }
+
+  .map-point {
+      position: absolute;
+      width: 10px;
+      height: 10px;
+      background-color: red;
+      border-radius: 50%;
+      cursor: pointer;
+  }
+
+  #controls {
+      position: absolute;
+      top: 10px;
+      right: 10px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      background-color: rgba(255, 255, 255, 0.8); 
+      padding: 10px;
+      border-radius: 10px;
+      box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  }
+
+  #toggleLayer {
+      margin-bottom: 10px;
+      padding: 5px 10px;
+      font-size: 14px;
+  }
+  
+  #drawCanvas {
+  border: 1px solid black;
+  width: 100%;
+  height: 100%;
+  }
+
+  .annotation-hotspot {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    pointer-events: none;
+  }
+
+  .annotation-label {
+    position: absolute;
+    top: -20px;
+    left: -10px;
+    background-color: white;
+    padding: 5px;
+    border-radius: 3px;
+    font-size: 12px;
+    display: none;
+  }
+
+  .annotation-hotspot:hover .annotation-label {
+    display: block;
+  }
+
+  #annotationPopup {
+    position: absolute;
+    background-color: white;
+    color: black;  /* テキストが黒く表示されるように */
+    border: 1px solid black;
+    padding: 10px;
+    display: none;  /* デフォルトは非表示 */
+    z-index: 1000;  /* 最前面に表示 */
+}
+
+</style>
+</head>
+<body class="multiple-scenes ">
+
+<div id="pano"></div>
+
+<canvas id="drawCanvas" width="800" height="600"></canvas>
+
+
+<div id="map-container">
+    <div id="map"></div>
+</div>
+
+<div id="svgContainer">
+  <svg id="polygonSVG" width="100%" height="100%" style="position:absolute; top:0; left:0; pointer-events: none; z-index: 5;">
+  </svg>
+</div>
+
+<div id="annotationPopup" style="display:none; position:absolute; background-color:white; border:1px solid black; padding:10px;">
+  <p id="annotationInfo"></p>
+  <button onclick="closePopup()">Close</button>
+</div>
+
+<button id="addAnnotationBtn">情報追加</button>
+
+
+<a href="javascript:void(0)" id="fullscreenToggle">
+  <img class="icon off" src="img/fullscreen.png">
+  <img class="icon on" src="img/windowed.png">
+</a>
+
+<a href="javascript:void(0)" id="viewUp" class="viewControlButton viewControlButton-1">
+  <img class="icon" src="img/up.png">
+</a>
+<a href="javascript:void(0)" id="viewDown" class="viewControlButton viewControlButton-2">
+  <img class="icon" src="img/down.png">
+</a>
+<a href="javascript:void(0)" id="viewLeft" class="viewControlButton viewControlButton-3">
+  <img class="icon" src="img/left.png">
+</a>
+<a href="javascript:void(0)" id="viewRight" class="viewControlButton-4">
+  <img class="icon" src="img/right.png">
+</a>
+<a href="javascript:void(0)" id="viewIn" class="viewControlButton viewControlButton-5">
+  <img class="icon" src="img/plus.png">
+</a>
+<a href="javascript:void(0)" id="viewOut" class="viewControlButton viewControlButton-6">
+  <img class="icon" src="img/minus.png">
+</a>
+
+<script src="vendor/screenfull.min.js"></script>
+<script src="vendor/bowser.min.js"></script>
+<script src="vendor/marzipano.js"></script>
+
+<script>
+  // URL パラメータから橋梁名を取得
+  function getQueryParam(param) {
+      const urlParams = new URLSearchParams(window.location.search);
+      return urlParams.get(param);
+  }
+
+  // パラメータから橋梁名を取得
+  const bridge = getQueryParam('bridge') || 'bridge1_20241103'; // デフォルトは 'bridge1':http://localhost:8000/?bridge=bridge1_20241103
+
+  // data.js を動的に読み込む
+  const script = document.createElement('script');
+  script.src = `./${bridge}/data.js`; // パラメータに基づいてスクリプトパスを生成
+  script.type = 'text/javascript';
+  script.onload = () => {
+      console.log(`Loaded script: ./${bridge}/data.js`);
+      
+      // data.js がロードされた後で index.js をロード
+      const indexScript = document.createElement('script');
+      indexScript.src = "index.js";
+      indexScript.type = "text/javascript";
+      indexScript.onload = () => {
+        console.log("index.js がロードされ、すべてのスクリプトが準備完了しました");
+      };
+      indexScript.onerror = () => {
+          console.error("Failed to load index.js");
+      };
+      document.body.appendChild(indexScript);
+  };
+  script.onerror = () => {
+      console.error(`Failed to load script: ./${bridge}/data.js`);
+  };
+
+  // data.js を <body> に追加
+  document.body.appendChild(script);
+</script>
+
+<!-- 撮影日表示用コンテナ -->
+<div id="captureDateContainer"></div>
+
+
+<div id="itemSelector">
+  <label for="itemSelect">状態・損傷選択:</label>
+  <select id="itemSelect">
+    <!-- オプションはJavaScriptで動的に追加 -->
+  </select>
+</div>
+
+  <!-- 資料セレクター用コンテナ -->
+  <div id="documentSelectorContainer">
+    <label for="documentSelect">資料：</label>
+
+    <!-- セレクトボックス。リンク先の例として2つの選択肢を用意 -->
+    <select id="documentSelect">
+      <option value="">選択してください</option>
+    </select>
+
+    <!-- ボタン（リターンキーのアイコンの代わりに「Go→」と表示） -->
+    <button id="documentOpenButton">→</button>
+  </div>
+
+  <script src="bridge_select.js"></script>
+
+</body>
+</html>
+    
