@@ -163,10 +163,10 @@
 
   // data.js を動的に読み込む
   const script = document.createElement('script');
-  script.src = `./${bridge}/data.js`; // パラメータに基づいてスクリプトパスを生成
+  script.src = `${bridge}/data.js`; // パラメータに基づいてスクリプトパスを生成
   script.type = 'text/javascript';
   script.onload = () => {
-      console.log(`Loaded script: ./${bridge}/data.js`);
+      console.log(`Loaded script: ${bridge}/data.js`);
       
       // data.js がロードされた後で index.js をロード
       const indexScript = document.createElement('script');
