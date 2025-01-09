@@ -2976,7 +2976,7 @@ function createEditablePoint(x, y, index) {
   }
 
   function getAnnotationById(id) {
-    return fetch(`bridge1_20241103/bridge1_20241103/annotations/annotations.json?folder=${bridge_folder}`)
+    return fetch(`bridge1_20241103/annotations/annotations.json?folder=${bridge_folder}`)
       .then(response => {
         if (!response.ok) {
           throw new Error('Failed to load annotations.json');
