@@ -276,8 +276,8 @@ const basePath = location.hostname === 'localhost'
 
 // 例: index.js 内のどこかに書く
 function setMapBackgroundIfExists(bridgeFolder) {
-  const mapImagePath = `${basePath}/${bridgeFolder}/map.png`;
-
+  //const mapImagePath = `${basePath}/${bridgeFolder}/map.png`;
+  const mapImagePath = `./${bridgeFolder}/map.png`;
   // HEADリクエストで画像が存在するかチェック
   fetch(mapImagePath, { method: 'HEAD' })
     .then(response => {
