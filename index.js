@@ -270,14 +270,11 @@ const captureDateText = `${parseInt(yyyy)}年${parseInt(mm)}月${parseInt(dd)}�
     }
   }
 
-const isGitHubPages = location.hostname.includes('github.io');
-const basePath = isGitHubPages ? '/bridge_360_temp' : '';
-
 
 // 例: index.js 内のどこかに書く
 function setMapBackgroundIfExists(bridge_folder) {
   //const mapImagePath = `${basePath}/${bridgeFolder}/map.png`;
-  const mapImagePath = `${basePath}/${bridge_folder}/map.png`;
+  const mapImagePath = `${bridge_folder}/map.png`;
   // HEADリクエストで画像が存在するかチェック
   fetch(mapImagePath, { method: 'HEAD' })
     .then(response => {
