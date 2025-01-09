@@ -15,7 +15,7 @@ document.addEventListener("DOMContentLoaded", () => {
     // => bridgeParam = "bridge1_20241103"
     // => 先頭部は "bridgeParam.split('_')[0]" = "bridge1"
     const urlParams = new URLSearchParams(window.location.search);
-    const bridgeParam = urlParams.get("bridge") || "./bridge1_20241103";
+    const bridgeParam = urlParams.get("bridge") || "bridge1_20241103";
     const bridgeShortName = bridgeParam.split("_")[0];
   
     // セレクトボックスと「GO→」ボタンのDOM要素
