@@ -23,7 +23,7 @@ document.addEventListener("DOMContentLoaded", () => {
     const documentOpenButton = document.getElementById("documentOpenButton");
   
     // bridge_info.jsonを読み込む
-    fetch("bridge1_20241103/bridge_info.json")
+    fetch("bridge_info.json")
       .then(response => {
         if (!response.ok) {
           throw new Error("Failed to load bridge_info.json");
