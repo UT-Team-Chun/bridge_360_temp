@@ -57,7 +57,7 @@ const captureDateText = `${parseInt(yyyy)}年${parseInt(mm)}月${parseInt(dd)}�
       }
 
   
-      fetch(`/annotations.json?folder=${bridge_folder}`)
+      fetch(`annotations/annotations.json?folder=${bridge_folder}`)
         .then(response => {
           if (!response.ok) {
             throw new Error('Failed to load annotations.json');
@@ -1563,7 +1563,7 @@ function createLinkHotspotElement(hotspot) {
   var annotationHotspots = [];  // アノテーションごとのホットスポットを保存するリスト
 
   function loadAnnotationsFromJSON(imageWidth, imageHeight, currentImageName) {
-    fetch(`/annotations.json?folder=${bridge_folder}`)
+    fetch(`annotations/annotations.json?folder=${bridge_folder}`)
       .then(response => {
         if (!response.ok) {
           throw new Error('Failed to load annotations.json');
@@ -2976,7 +2976,7 @@ function createEditablePoint(x, y, index) {
   }
 
   function getAnnotationById(id) {
-    return fetch(`/annotations.json?folder=${bridge_folder}`)
+    return fetch(`annotations/annotations.json?folder=${bridge_folder}`)
       .then(response => {
         if (!response.ok) {
           throw new Error('Failed to load annotations.json');

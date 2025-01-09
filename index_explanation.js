@@ -532,7 +532,7 @@
 
   function loadAnnotationsFromJSON(imageWidth, imageHeight, currentImageName) {
     // JSONファイルをサーバーから取得
-    fetch('/annotations.json')
+    fetch('annotations/annotations.json')
       .then(response => {
           if (!response.ok) {
               throw new Error('Failed to load annotations.json');
