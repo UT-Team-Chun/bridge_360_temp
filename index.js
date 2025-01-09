@@ -23,7 +23,7 @@ function getQueryParam(param) {
 }
 
 // "bridge"パラメータを取得し、存在しなければデフォルトで"bridge1"
-const bridge_folder = getQueryParam('bridge') || './bridge1_20241103';// デフォルトは 'bridge1':http://localhost:8000/?bridge=bridge1_20241103
+const bridge_folder = './bridge1_20241103';// デフォルトは 'bridge1':http://localhost:8000/?bridge=bridge1_20241103
 console.log(`bridge_folder: ${bridge_folder}`);
 
 // "_" で分割し、後ろ部分を YYYYMMDD とみなす
