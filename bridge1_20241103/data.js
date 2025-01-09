@@ -2,8 +2,8 @@ var APP_DATA = {
   "scenes": [
     {
       "id": "0",
-      "name": "R0010136_20240820144920.jpg",
-      "imageUrl": "bridge1_20241103/images/R0010136_20240820144920.jpg",
+      "name": "R0010136_20240820144920.JPG",
+      "imageUrl": "bridge1_20241103/images/R0010136_20240820144920.JPG",
       "faceSize": 6720,
       "initialViewParameters": {
         "pitch": 0,
@@ -117,8 +117,8 @@ var APP_DATA = {
     },
     {
       "id": "1",
-      "name": "R0010137_20240820144952.jpg",
-      "imageUrl": "bridge1_20241103/images/R0010137_20240820144952.jpg",
+      "name": "R0010137_20240820144952.JPG",
+      "imageUrl": "bridge1_20241103/images/R0010137_20240820144952.JPG",
       "faceSize": 6720,
       "initialViewParameters": {
         "pitch": 0,
@@ -232,8 +232,8 @@ var APP_DATA = {
     },
     {
       "id": "2",
-      "name": "R0010138_20240820145002.jpg",
-      "imageUrl": "bridge1_20241103/images/R0010138_20240820145002.jpg",
+      "name": "R0010138_20240820145002.JPG",
+      "imageUrl": "bridge1_20241103/images/R0010138_20240820145002.JPG",
       "faceSize": 6720,
       "initialViewParameters": {
         "pitch": 0,
@@ -347,8 +347,8 @@ var APP_DATA = {
     },
     {
       "id": "3",
-      "name": "R0010139_20240820145009.jpg",
-      "imageUrl": "bridge1_20241103/images/R0010139_20240820145009.jpg",
+      "name": "R0010139_20240820145009.JPG",
+      "imageUrl": "bridge1_20241103/images/R0010139_20240820145009.JPG",
       "faceSize": 6720,
       "initialViewParameters": {
         "pitch": 0,
@@ -462,8 +462,8 @@ var APP_DATA = {
     },
     {
       "id": "4",
-      "name": "R0010140_20240820145017.jpg",
-      "imageUrl": "bridge1_20241103/images/R0010140_20240820145017.jpg",
+      "name": "R0010140_20240820145017.JPG",
+      "imageUrl": "bridge1_20241103/images/R0010140_20240820145017.JPG",
       "faceSize": 6720,
       "initialViewParameters": {
         "pitch": 0,
@@ -577,8 +577,8 @@ var APP_DATA = {
     },
     {
       "id": "5",
-      "name": "R0010141_20240820145024.jpg",
-      "imageUrl": "bridge1_20241103/images/R0010141_20240820145024.jpg",
+      "name": "R0010141_20240820145024.JPG",
+      "imageUrl": "bridge1_20241103/images/R0010141_20240820145024.JPG",
       "faceSize": 6720,
       "initialViewParameters": {
         "pitch": 0,
@@ -692,8 +692,8 @@ var APP_DATA = {
     },
     {
       "id": "6",
-      "name": "R0010142_20240820145032.jpg",
-      "imageUrl": "bridge1_20241103/images/R0010142_20240820145032.jpg",
+      "name": "R0010142_20240820145032.JPG",
+      "imageUrl": "bridge1_20241103/images/R0010142_20240820145032.JPG",
       "faceSize": 6720,
       "initialViewParameters": {
         "pitch": 0,
@@ -807,8 +807,8 @@ var APP_DATA = {
     },
     {
       "id": "7",
-      "name": "R0010143_20240820145039.jpg",
-      "imageUrl": "bridge1_20241103/images/R0010143_20240820145039.jpg",
+      "name": "R0010143_20240820145039.JPG",
+      "imageUrl": "bridge1_20241103/images/R0010143_20240820145039.JPG",
       "faceSize": 6720,
       "initialViewParameters": {
         "pitch": 0,
@@ -922,8 +922,8 @@ var APP_DATA = {
     },
     {
       "id": "8",
-      "name": "R0010144_20240820145100.jpg",
-      "imageUrl": "bridge1_20241103/images/R0010144_20240820145100.jpg",
+      "name": "R0010144_20240820145100.JPG",
+      "imageUrl": "bridge1_20241103/images/R0010144_20240820145100.JPG",
       "faceSize": 6720,
       "initialViewParameters": {
         "pitch": 0,
@@ -1037,8 +1037,8 @@ var APP_DATA = {
     },
     {
       "id": "9",
-      "name": "R0010145_20240820145108.jpg",
-      "imageUrl": "bridge1_20241103/images/R0010145_20240820145108.jpg",
+      "name": "R0010145_20240820145108.JPG",
+      "imageUrl": "bridge1_20241103/images/R0010145_20240820145108.JPG",
       "faceSize": 6720,
       "initialViewParameters": {
         "pitch": 0,
@@ -1152,8 +1152,8 @@ var APP_DATA = {
     },
     {
       "id": "10",
-      "name": "R0010146_20240820145116.jpg",
-      "imageUrl": "bridge1_20241103/images/R0010146_20240820145116.jpg",
+      "name": "R0010146_20240820145116.JPG",
+      "imageUrl": "bridge1_20241103/images/R0010146_20240820145116.JPG",
       "faceSize": 6720,
       "initialViewParameters": {
         "pitch": 0,
@@ -1267,8 +1267,8 @@ var APP_DATA = {
     },
     {
       "id": "11",
-      "name": "R0010147_20240820145126.jpg",
-      "imageUrl": "bridge1_20241103/images/R0010147_20240820145126.jpg",
+      "name": "R0010147_20240820145126.JPG",
+      "imageUrl": "bridge1_20241103/images/R0010147_20240820145126.JPG",
       "faceSize": 6720,
       "initialViewParameters": {
         "pitch": 0,
@@ -1382,8 +1382,8 @@ var APP_DATA = {
     },
     {
       "id": "12",
-      "name": "R0010148_20240820145129.jpg",
-      "imageUrl": "bridge1_20241103/images/R0010148_20240820145129.jpg",
+      "name": "R0010148_20240820145129.JPG",
+      "imageUrl": "bridge1_20241103/images/R0010148_20240820145129.JPG",
       "faceSize": 6720,
       "initialViewParameters": {
         "pitch": 0,
@@ -1497,8 +1497,8 @@ var APP_DATA = {
     },
     {
       "id": "13",
-      "name": "R0010149_20240820145137.jpg",
-      "imageUrl": "bridge1_20241103/images/R0010149_20240820145137.jpg",
+      "name": "R0010149_20240820145137.JPG",
+      "imageUrl": "bridge1_20241103/images/R0010149_20240820145137.JPG",
       "faceSize": 6720,
       "initialViewParameters": {
         "pitch": 0,
@@ -1612,8 +1612,8 @@ var APP_DATA = {
     },
     {
       "id": "14",
-      "name": "R0010150_20240820145151.jpg",
-      "imageUrl": "bridge1_20241103/images/R0010150_20240820145151.jpg",
+      "name": "R0010150_20240820145151.JPG",
+      "imageUrl": "bridge1_20241103/images/R0010150_20240820145151.JPG",
       "faceSize": 6720,
       "initialViewParameters": {
         "pitch": 0,
@@ -1727,8 +1727,8 @@ var APP_DATA = {
     },
     {
       "id": "15",
-      "name": "R0010151_20240820145158.jpg",
-      "imageUrl": "bridge1_20241103/images/R0010151_20240820145158.jpg",
+      "name": "R0010151_20240820145158.JPG",
+      "imageUrl": "bridge1_20241103/images/R0010151_20240820145158.JPG",
       "faceSize": 6720,
       "initialViewParameters": {
         "pitch": 0,
@@ -1842,8 +1842,8 @@ var APP_DATA = {
     },
     {
       "id": "16",
-      "name": "R0010152_20240820145205.jpg",
-      "imageUrl": "bridge1_20241103/images/R0010152_20240820145205.jpg",
+      "name": "R0010152_20240820145205.JPG",
+      "imageUrl": "bridge1_20241103/images/R0010152_20240820145205.JPG",
       "faceSize": 6720,
       "initialViewParameters": {
         "pitch": 0,
@@ -1957,8 +1957,8 @@ var APP_DATA = {
     },
     {
       "id": "17",
-      "name": "R0010153_20240820145213.jpg",
-      "imageUrl": "bridge1_20241103/images/R0010153_20240820145213.jpg",
+      "name": "R0010153_20240820145213.JPG",
+      "imageUrl": "bridge1_20241103/images/R0010153_20240820145213.JPG",
       "faceSize": 6720,
       "initialViewParameters": {
         "pitch": 0,
@@ -2072,8 +2072,8 @@ var APP_DATA = {
     },
     {
       "id": "18",
-      "name": "R0010154_20240820145221.jpg",
-      "imageUrl": "bridge1_20241103/images/R0010154_20240820145221.jpg",
+      "name": "R0010154_20240820145221.JPG",
+      "imageUrl": "bridge1_20241103/images/R0010154_20240820145221.JPG",
       "faceSize": 6720,
       "initialViewParameters": {
         "pitch": 0,
@@ -2187,8 +2187,8 @@ var APP_DATA = {
     },
     {
       "id": "19",
-      "name": "R0010155_20240820145236.jpg",
-      "imageUrl": "bridge1_20241103/images/R0010155_20240820145236.jpg",
+      "name": "R0010155_20240820145236.JPG",
+      "imageUrl": "bridge1_20241103/images/R0010155_20240820145236.JPG",
       "faceSize": 6720,
       "initialViewParameters": {
         "pitch": 0,
@@ -2302,8 +2302,8 @@ var APP_DATA = {
     },
     {
       "id": "20",
-      "name": "R0010156_20240820145249.jpg",
-      "imageUrl": "bridge1_20241103/images/R0010156_20240820145249.jpg",
+      "name": "R0010156_20240820145249.JPG",
+      "imageUrl": "bridge1_20241103/images/R0010156_20240820145249.JPG",
       "faceSize": 6720,
       "initialViewParameters": {
         "pitch": 0,
@@ -2417,8 +2417,8 @@ var APP_DATA = {
     },
     {
       "id": "21",
-      "name": "R0010157_20240820145301.jpg",
-      "imageUrl": "bridge1_20241103/images/R0010157_20240820145301.jpg",
+      "name": "R0010157_20240820145301.JPG",
+      "imageUrl": "bridge1_20241103/images/R0010157_20240820145301.JPG",
       "faceSize": 6720,
       "initialViewParameters": {
         "pitch": 0,
@@ -2532,8 +2532,8 @@ var APP_DATA = {
     },
     {
       "id": "22",
-      "name": "R0010158_20240820145311.jpg",
-      "imageUrl": "bridge1_20241103/images/R0010158_20240820145311.jpg",
+      "name": "R0010158_20240820145311.JPG",
+      "imageUrl": "bridge1_20241103/images/R0010158_20240820145311.JPG",
       "faceSize": 6720,
       "initialViewParameters": {
         "pitch": 0,
@@ -2647,8 +2647,8 @@ var APP_DATA = {
     },
     {
       "id": "23",
-      "name": "R0010159_20240820145322.jpg",
-      "imageUrl": "bridge1_20241103/images/R0010159_20240820145322.jpg",
+      "name": "R0010159_20240820145322.JPG",
+      "imageUrl": "bridge1_20241103/images/R0010159_20240820145322.JPG",
       "faceSize": 6720,
       "initialViewParameters": {
         "pitch": 0,
@@ -2762,8 +2762,8 @@ var APP_DATA = {
     },
     {
       "id": "24",
-      "name": "R0010160_20240820145332.jpg",
-      "imageUrl": "bridge1_20241103/images/R0010160_20240820145332.jpg",
+      "name": "R0010160_20240820145332.JPG",
+      "imageUrl": "bridge1_20241103/images/R0010160_20240820145332.JPG",
       "faceSize": 6720,
       "initialViewParameters": {
         "pitch": 0,
